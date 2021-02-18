@@ -1,0 +1,7 @@
+package singleton
+
+object SingletonObj {
+
+
+
+}
