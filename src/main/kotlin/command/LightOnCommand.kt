@@ -1,10 +1,11 @@
 package command
 
-class LightOnCommand : Command {
-
-    var light: Light = Light()
+/**
+ * 具体的灯光命令
+ */
+class LightOnCommand(private val electricDevice: ElectricDevice) : Command {
 
     override fun execute() {
-        this.light.on()
+        this.electricDevice.on()
     }
 }

@@ -1,8 +1,11 @@
 package command
 
-class Light {
+/**
+ * 灯
+ */
+class Light : ElectricDevice {
 
-    fun on(){
+    override fun on() {
         println("开灯")
     }
 

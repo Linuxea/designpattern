@@ -1,10 +1,11 @@
 package command
 
-class FridgeCommand : Command {
-
-    var fridge: Fridge = Fridge()
+/**
+ * 具体的冰箱命令
+ */
+class FridgeCommand(private val electricDevice: ElectricDevice) : Command {
 
     override fun execute() {
-        this.fridge.on()
+        this.electricDevice.on()
     }
 }
